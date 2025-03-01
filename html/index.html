@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loading Screen</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="config.js"></script>
+  <link rel="stylesheet" href="assets/css/all.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type="text/javascript" src="assets/scripts/all.min.js"></script>
+  <script src="scripts.js" defer></script>
+</head>
+<body>
+  <iframe id="youtube-player" class="bg" src="https://www.youtube.com/embed/gYO1uk7vIcc?enablejsapi=1&autoplay=1&loop=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+  <img id="serverLogo" class="server-logo" src="" alt="Server Logo" style="display: none;">
+  <!--<button id="settingsButton">⚙️ Settings</button>-->
+  
+  <div id="menu" class="menu">
+    <div class="menu-header">
+      <button id="homeBtn"></button>
+      <button id="newsBtn"></button>
+      <button id="teamBtn"></button>
+    </div>
+
+    <div id="homeContent" class="content-section">
+      <h1 id="homeTitle"></h1>
+      <p id="homeSubtitle"></p>
+      <div id="discordSection">
+          <img id="discordLogo" src="" alt="Discord Logo">
+          <div>
+              <h3 id="discordName"></h3>
+          </div>
+          <button id="discordLinkButton">CONNECT ➔</button>
+      </div>
+    </div>
+
+    <div id="updatesSection" class="content-section"></div>
+
+    <div id="developersSection" class="content-section"></div>
+
+    <div id="adminsSection" class="content-section"></div>
+
+    <div id="socialSection" class="content-section"></div>
+    
+  </div>
+<!--
+  <div id="settingsModal" class="modal">
+    <div class="modal-content">
+        <h3>Options</h3>
+        
+        <label for="videoUrl">Video URL:</label>
+        <input type="text" id="videoUrl" placeholder="Background video URL">
+
+        <label for="useAudio">
+            <input type="checkbox" id="useAudio"> Mute Video Audio
+        </label>
+
+        <button id="saveSettings">Save</button>
+    </div>
+  </div>-->
+  
+</body>
+</html>
